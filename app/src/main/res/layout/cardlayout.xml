@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="260dp">
+
+
+    <ImageView
+        android:id="@+id/card_image"
+        android:layout_width="380dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/carddesign" />
+
+    <TextView
+        android:id="@+id/card_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/credcadrfont"
+        android:text="@string/card_num"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_image"
+        app:layout_constraintEnd_toEndOf="@+id/card_image"
+        app:layout_constraintStart_toStartOf="@+id/card_image"
+        app:layout_constraintTop_toTopOf="@+id/card_image" />
+
+    <TextView
+        android:id="@+id/card_descr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/card_descr"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/card_num"
+        app:layout_constraintStart_toStartOf="@+id/card_num"
+        app:layout_constraintTop_toTopOf="@+id/card_image" />
+
+    <TextView
+        android:id="@+id/card_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card_month"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/devider"
+        app:layout_constraintEnd_toStartOf="@+id/devider"
+        app:layout_constraintTop_toTopOf="@+id/devider" />
+
+    <TextView
+        android:id="@+id/card_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card_year"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/devider"
+        app:layout_constraintStart_toEndOf="@+id/devider"
+        app:layout_constraintTop_toTopOf="@+id/devider" />
+
+    <TextView
+        android:id="@+id/card_cvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/card_cvv"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/card_year"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toEndOf="@+id/card_month"
+        app:layout_constraintTop_toBottomOf="@+id/devider" />
+
+    <TextView
+        android:id="@+id/devider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=" / "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/card_num"
+        app:layout_constraintStart_toStartOf="@+id/card_num"
+        app:layout_constraintTop_toBottomOf="@+id/card_num" />
+
+    <TextView
+        android:id="@+id/field_description1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/field_description1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/devider"
+        app:layout_constraintEnd_toStartOf="@+id/card_month"
+        app:layout_constraintTop_toTopOf="@+id/devider" />
+
+    <TextView
+        android:id="@+id/field_description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/field_description2"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/card_cvv"
+        app:layout_constraintEnd_toStartOf="@+id/card_cvv"
+        app:layout_constraintTop_toTopOf="@+id/card_cvv" />
+
+    <ImageView
+        android:id="@+id/paysys_img"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_cvv"
+        app:layout_constraintStart_toEndOf="@+id/card_cvv"
+        app:layout_constraintTop_toTopOf="@+id/card_cvv"
+        app:srcCompat="@drawable/unknown" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

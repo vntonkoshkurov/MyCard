@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="@string/bank_card_select"
+    app:startDestination="@id/cardlist">
+    <fragment
+        android:id="@id/cardlist"
+        android:name="com.example.mycard.ui.cardlist.CardList"
+        android:label="@string/card_list"
+        tools:layout="@layout/fragment_card_list" >
+        <action
+            android:id="@+id/action_cardlist_to_cardadd"
+            app:destination="@id/cardadd"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_cardlist_to_cardview"
+            app:destination="@id/cardview"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/cardlist" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardadd"
+        android:name="com.example.mycard.ui.cardadd.CardAddForm"
+        android:label="@string/cardadd_frame_name"
+        tools:layout="@layout/fragment_card_add_form" />
+    <fragment
+        android:id="@+id/cardview"
+        android:name="com.example.mycard.ui.cardview.CardView"
+        android:label="@string/cardview_fragment_name"
+        tools:layout="@layout/fragment_card_view" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.mycard.ui.settings.AppSettings"
+        android:label="@string/setting_fragment_name"
+        tools:layout="@layout/fragment_app_settings" >
+        <action
+            android:id="@+id/action_settings_to_setPin"
+            app:destination="@id/setPin"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/setPin"
+        android:name="com.example.mycard.ui.setPIN.setPin"
+        android:label="@string/setPin_fragment_name"
+        tools:layout="@layout/fragment_set_pin" />
+    <fragment
+        android:id="@+id/confDescription"
+        android:name="com.example.mycard.ui.ConfDescription.ConfDescription"
+        android:label="@string/confidencial_fragment_name"
+        tools:layout="@layout/fragment_conf_description" />
+    <fragment
+        android:id="@+id/aboutApp"
+        android:name="com.example.mycard.ui.AboutApp.AboutApp"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about_app" />
+    <fragment
+        android:id="@+id/banklist"
+        android:name="com.example.mycard.ui.banklist.BankList"
+        android:label="@string/bank_list"
+        tools:layout="@layout/fragment_bank_list" >
+        <action
+            android:id="@+id/action_banklist_to_bankadd"
+            app:destination="@id/bankadd"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/banklist" />
+        <action
+            android:id="@+id/action_banklist_to_bankview"
+            app:destination="@id/bankview"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/banklist" />
+        <action
+            android:id="@+id/action_banklist_to_bankCardView"
+            app:destination="@id/bankCardView"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/banklist" />
+        <action
+            android:id="@+id/action_banklist_to_cardDistrib"
+            app:destination="@id/cardDistrib"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/banklist" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankadd"
+        android:name="com.example.mycard.ui.bankadd.BankAddForm"
+        android:label="@string/bank_add"
+        tools:layout="@layout/fragment_bank_add_form" />
+    <fragment
+        android:id="@+id/bankview"
+        android:name="com.example.mycard.ui.bankview.BankView"
+        android:label="@string/cardview_fragment_name"
+        tools:layout="@layout/fragment_bank_view" />
+    <fragment
+        android:id="@+id/bankCardView"
+        android:name="com.example.mycard.ui.bankcardview.BankCardView"
+        android:label="@string/bank_cards"
+        tools:layout="@layout/fragment_bank_card_view" >
+        <action
+            android:id="@+id/action_cardlist_to_cardview"
+            app:destination="@id/cardview"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/bankCardView" />
+        <action
+            android:id="@+id/action_cardlist_to_cardadd"
+            app:destination="@id/cardadd"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/bankCardView" />
+        <action
+            android:id="@+id/action_bankCardView_to_cardlist"
+            app:destination="@id/cardlist"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/bankCardView" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardDistrib"
+        android:name="com.example.mycard.ui.carddistrib.CardDistrib"
+        android:label="@string/bank_card_select"
+        tools:layout="@layout/fragment_card_distrib" />
+</navigation>

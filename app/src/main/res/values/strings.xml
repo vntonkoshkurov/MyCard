@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name" translatable="false">TiCard</string>
+    <string name="card_num" translatable="false">Card Number</string>
+    <string name="nav_header_desc" translatable="false">TiCard</string>
+    <string name="card_month" translatable="false">Month</string>
+    <string name="card_year" translatable="false">Year</string>
+    <string name="card_cvv">Код</string>
+    <string name="buttontext">Создать</string>
+    <string name="txt_cardNum">Введите номер карты</string>
+    <string name="txt_cardMonth">Введите месяц</string>
+    <string name="txt_cardYear">Введите год</string>
+    <string name="txt_cardCVV">Введите код карты</string>
+    <string name="txt_cardCreate">Создать</string>
+    <string name="txt_btnBack">Закрыть</string>
+    <string name="deletebtn">Удалить</string>
+    <string name="txt_cardмviewDelete">Изменить</string>
+    <string name="txt_cardмviewBack">Назад</string>
+    <string name="card_num_in_cardview">Ном</string>
+    <string name="card_month_in_cardview">Мес</string>
+    <string name="card_year_in_cardview">Год</string>
+    <string name="card_cvv_in_cardview">Код</string>
+    <string name="field_description1">мес/год</string>
+    <string name="field_description2">Код</string>
+    <string name="card_descr">Описание карты</string>
+    <string name="txt_cardDescription">Введите описание карты</string>
+    <string name="card_descr_in_cardview">Описание</string>
+    <string name="menu_cardadd">Добавление карты</string>
+    <string name="menu_cardview">Просмотр карты</string>
+    <string name="menu_cardlist">Список карт</string>
+    <string name="cardadd_frame_name">Добавление карты</string>
+    <string name="cardview_fragment_name">Просмотр/Редактирование</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="setting_fragment_name">Настройки</string>
+    <string name="setting_theme_opentype">Защищенный вход</string>
+    <string name="login_sign">Введите ПИН код или используйте сканер отпечатка для входа в приложение</string>
+    <string name="txt_loginPIN">Вход по ПИН</string>
+    <string name="txt_loginFinger">Вход по отпечатку</string>
+    <string name="txt_pinreg">Введите ПИН</string>
+    <string name="txt_pinreg2">Повторите ПИН</string>
+    <string name="setPin_fragment_name">Установка ПИН</string>
+    <string name="confidencial_fragment_name">Конфиденциальность данных</string>
+    <string name="confidencial_menu">О безопасности</string>
+    <string name="about">О программе</string>
+    <string name="txt_introduction">Ознакомлен</string>
+    <string name="check_idendification_good">Устройство поддерживает идендификацию по отпечатку пальца, которая будет в приоритете при входе.\nВведите ПИН код длинной минимум 4 цифры.</string>
+    <string name="check_idendification_bad">Идендификация возможна только по ПИН коду.</string>
+    <string name="finger_idendification_bad">Неудачная идентификация</string>
+    <string name="biometricPrompt_title">Идендификация пользователя</string>
+    <string name="biometricPrompt_subtitle">Используйте сканер отпечатка пальца для идендификации</string>
+    <string name="biometricPrompt_cancel">Отмена</string>
+    <string name="pin_set_ok">ПИН код установлен</string>
+    <string name="pin_set_bad">ПИН код не введен</string>
+    <string name="pin_set_incorrect">ПИН коды не совпадают</string>
+    <string name="pin_check_incorrect">Неудачная идендификация! Осталось попыток до удаления базы данных: </string>
+    <string name="pin_donot_enter">ПИН не введен</string>
+    <string name="copy_cardnum_ico">Номер карты скопирован</string>
+    <string name="copy_cardmonth_ico">Месяц скопирован</string>
+    <string name="copy_cardyear_ico">Год скопирован</string>
+    <string name="copy_cardcvv_ico">Код карты скопирован</string>
+    <string name="edit_result_good">Данные изменены</string>
+    <string name="edit_result_bad">Ошибка изменения данных</string>
+    <string name="add_result_good">Данные добавлены в базу</string>
+    <string name="add_result_bad">Ошибка добавления данных в базу</string>
+    <string name="check_card_num_result">Количество символов в номере карты некорректно</string>
+    <string name="check_card_month1_result">Количество символов в месяце некорректно</string>
+    <string name="check_card_month2_result">Введен некорректный месяц</string>
+    <string name="check_card_year_result">Количество символов в году некорректно</string>
+    <string name="check_card_cvv_result">Количество символов в коде некорректно</string>
+    <string name="cardbase_delete_good">База данных с картами удалена</string>
+    <string name="cardbase_delete_bad">Ошибка удаления базы данных</string>
+    <string name="dialog1_title_view">Выбрана карта *</string>
+    <string name="dialog1_message_view">Выберете действие с картой</string>
+    <string name="dialog1_pos_button">Просмотр/Редактирование</string>
+    <string name="dialog1_neg_button">Удалить</string>
+    <string name="dialog2_title_view">Проверка данных</string>
+    <string name="setting_theme_mode">Темная тема</string>
+    <string name="pin_length_check">Минимальная длина ПИН кода - 4 цифры.</string>
+    <string name="color">Цвет</string>
+    <string name="color_select_dialog">Выбор цвета</string>
+    <string name="color_select_sel_button">Выбрать</string>
+    <string name="color_select_cst_button">Палитра</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bank_name">Название банка</string>
+    <string name="menu_banklist">Список банков</string>
+    <string name="bank_name_input">Введите название банка</string>
+    <string name="dialog3_title_view">Выбран банк:</string>
+    <string name="dialog3_message_view">Выберете действие с банком</string>
+    <string name="dialog1_neutr_button">Выбрать карты</string>
+    <string name="bank_list">Ваши банки</string>
+    <string name="bank_add">Добавление банка</string>
+    <string name="bank_cards">Карты банка</string>
+    <string name="bank_card_select">Выбор карт для банка</string>
+    <string name="card_short">Карта</string>
+    <string name="bank_add_msg">Введите название банка</string>
+    <string name="card_select_msg">Выберете карты банка</string>
+    <string name="card_selcted_msg">Карты добавлены в банк</string>
+    <string name="card_list">Ваши карты</string>
+    <string name="app_version">Версия приложения:</string>
+    <string name="select_card">Выбрать</string>
+
+</resources>

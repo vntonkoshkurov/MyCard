@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cardview.CardView">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/frame_cardview"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/card_numView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:inputType="number"
+        android:maxLength="19"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card_num_copy"
+        app:layout_constraintTop_toBottomOf="@+id/frame_cardview" />
+
+    <EditText
+        android:id="@+id/card_monthView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/card_numView"
+        app:layout_constraintStart_toEndOf="@+id/card_month_copy"
+        app:layout_constraintTop_toBottomOf="@+id/card_numView" />
+
+    <EditText
+        android:id="@+id/card_yearView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/card_numView"
+        app:layout_constraintStart_toEndOf="@+id/card_year_copy"
+        app:layout_constraintTop_toBottomOf="@+id/card_monthView" />
+
+    <EditText
+        android:id="@+id/card_cvvView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:maxLength="3"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/card_numView"
+        app:layout_constraintStart_toEndOf="@+id/card_cvv_copy"
+        app:layout_constraintTop_toBottomOf="@+id/card_yearView" />
+
+    <EditText
+        android:id="@+id/card_descriptionView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textShortMessage|text"
+        android:maxLength="20"
+        android:text="TextView"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/card_numView"
+        app:layout_constraintStart_toEndOf="@+id/card_descr_copy"
+        app:layout_constraintTop_toBottomOf="@+id/card_cvvView" />
+
+    <Button
+        android:id="@+id/change_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/bbkg"
+        android:hapticFeedbackEnabled="true"
+        android:text="@string/txt_cardмviewDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardCTXT" />
+
+    <Button
+        android:id="@+id/backinview_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bbkg"
+        android:hapticFeedbackEnabled="true"
+        android:text="@string/txt_cardмviewBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_button" />
+
+    <ImageView
+        android:id="@+id/card_num_copy_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:hapticFeedbackEnabled="true"
+        android:src="@drawable/copyicon"
+        android:theme="@style/Theme.MyCard.Icon"
+        app:layout_constraintBottom_toBottomOf="@+id/card_numView"
+        app:layout_constraintStart_toEndOf="@+id/card_numView"
+        app:layout_constraintTop_toTopOf="@+id/card_numView"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <ImageView
+        android:id="@+id/card_month_copy_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:hapticFeedbackEnabled="true"
+        android:src="@drawable/copyicon"
+        android:theme="@style/Theme.MyCard.Icon"
+        app:layout_constraintBottom_toBottomOf="@+id/card_monthView"
+        app:layout_constraintStart_toEndOf="@+id/card_monthView"
+        app:layout_constraintTop_toTopOf="@+id/card_monthView"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <ImageView
+        android:id="@+id/card_year_copy_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:hapticFeedbackEnabled="true"
+        android:src="@drawable/copyicon"
+        android:theme="@style/Theme.MyCard.Icon"
+        app:layout_constraintBottom_toBottomOf="@+id/card_yearView"
+        app:layout_constraintStart_toEndOf="@+id/card_yearView"
+        app:layout_constraintTop_toTopOf="@+id/card_yearView"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <ImageView
+        android:id="@+id/card_cvv_copy_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:hapticFeedbackEnabled="true"
+        android:src="@drawable/copyicon"
+        android:theme="@style/Theme.MyCard.Icon"
+        app:layout_constraintBottom_toBottomOf="@+id/card_cvvView"
+        app:layout_constraintStart_toEndOf="@+id/card_cvvView"
+        app:layout_constraintTop_toTopOf="@+id/card_cvvView"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/card_num_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/card_num_in_cardview"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_numView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_numView" />
+
+    <TextView
+        android:id="@+id/card_month_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card_month_in_cardview"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_monthView"
+        app:layout_constraintStart_toStartOf="@+id/card_num_copy"
+        app:layout_constraintTop_toTopOf="@+id/card_monthView" />
+
+    <TextView
+        android:id="@+id/card_year_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card_year_in_cardview"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_yearView"
+        app:layout_constraintStart_toStartOf="@+id/card_month_copy"
+        app:layout_constraintTop_toTopOf="@+id/card_yearView"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/card_cvv_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card_cvv_in_cardview"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_cvvView"
+        app:layout_constraintStart_toStartOf="@+id/card_year_copy"
+        app:layout_constraintTop_toTopOf="@+id/card_cvvView"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/card_descr_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card_descr_in_cardview"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_descriptionView"
+        app:layout_constraintStart_toStartOf="@+id/card_cvv_copy"
+        app:layout_constraintTop_toTopOf="@+id/card_descriptionView"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/cardCTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/color"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/card_descr_copy"
+        app:layout_constraintTop_toBottomOf="@+id/card_descriptionView" />
+
+    <ImageView
+        android:id="@+id/cardColor"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/color_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/cardCTXT"
+        app:layout_constraintStart_toEndOf="@+id/cardCTXT"
+        app:layout_constraintTop_toTopOf="@+id/cardCTXT" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

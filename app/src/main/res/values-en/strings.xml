@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TiCard</string>
+    <string name="buttontext">Create</string>
+    <string name="txt_cardNum">Enter the card number</string>
+    <string name="txt_cardMonth">Enter the card Month</string>
+    <string name="txt_cardYear">Enter the card Year</string>
+    <string name="txt_cardCVV">Enter the card code</string>
+    <string name="txt_cardCreate">Create</string>
+    <string name="txt_btnBack">Close</string>
+    <string name="deletebtn">Delete</string>
+    <string name="txt_cardмviewDelete">Edit</string>
+    <string name="txt_cardмviewBack">Back</string>
+    <string name="card_num_in_cardview">Num</string>
+    <string name="card_month_in_cardview">Mon</string>
+    <string name="card_year_in_cardview">YYY</string>
+    <string name="card_cvv_in_cardview">Сode</string>
+    <string name="field_description1">Mon/Year</string>
+    <string name="field_description2">Code</string>
+    <string name="card_descr">Card description</string>
+    <string name="txt_cardDescription">Enter a description of the card</string>
+    <string name="card_descr_in_cardview">Description</string>
+    <string name="menu_cardadd">Add cardAdding the card</string>
+    <string name="menu_cardview">Viewing a card</string>
+    <string name="menu_cardlist">Card list</string>
+    <string name="cardadd_frame_name">Adding the card</string>
+    <string name="cardview_fragment_name">View/Edit</string>
+    <string name="setting_theme_mode">Dark theme</string>
+    <string name="menu_settings">Settings</string>
+    <string name="setting_fragment_name">Settings</string>
+    <string name="setting_theme_opentype">Secure login</string>
+    <string name="login_sign">Enter the PIN code or use the fingerprint scanner to log in to the app</string>
+    <string name="txt_loginPIN">Login by PIN</string>
+    <string name="txt_loginFinger">Fingerprint scanner login</string>
+    <string name="txt_pinreg">Enter the PIN</string>
+    <string name="txt_pinreg2">Repiat  the PIN</string>
+    <string name="setPin_fragment_name">Set of the PIN</string>
+    <string name="confidencial_fragment_name">Confidencial data</string>
+    <string name="confidencial_menu">About security</string>
+    <string name="about">About the app</string>
+    <string name="txt_introduction">Acquainted</string>
+    <string name="check_idendification_good">The device supports fingerprint identification, which will be a priority when logging in.\nEnter a PIN code at least 4 digits long.</string>
+    <string name="check_idendification_bad">Identification is possible only by PIN code.</string>
+    <string name="finger_idendification_bad">Failed identification</string>
+    <string name="biometricPrompt_title">User identification</string>
+    <string name="biometricPrompt_subtitle">Use the fingerprint scanner for identification</string>
+    <string name="biometricPrompt_cancel">Cancel</string>
+    <string name="pin_set_ok">PIN code is set</string>
+    <string name="pin_set_bad">PIN code not entered</string>
+    <string name="pin_set_incorrect">PIN codes do not match</string>
+    <string name="pin_check_incorrect">Failed identification! There are still attempts left before deleting the database:</string>
+    <string name="pin_donot_enter">PIN code not entered</string>
+    <string name="copy_cardnum_ico">The card number has been copied</string>
+    <string name="copy_cardmonth_ico">Month copied</string>
+    <string name="copy_cardyear_ico">Year copied</string>
+    <string name="copy_cardcvv_ico">The card code has been copied</string>
+    <string name="edit_result_good">Details changed</string>
+    <string name="edit_result_bad">Error changing data</string>
+    <string name="add_result_good">The data has been added to the database</string>
+    <string name="add_result_bad">Error adding data to the database</string>
+    <string name="check_card_num_result">The number of characters in the card number is incorrect</string>
+    <string name="check_card_month1_result">The number of characters in the month is incorrect</string>
+    <string name="check_card_month2_result">Incorrect Month entered</string>
+    <string name="check_card_year_result">The number of characters in year is incorrect</string>
+    <string name="check_card_cvv_result">The number of characters in the card verification code is incorrect</string>
+    <string name="cardbase_delete_good">The database with cards has been deleted</string>
+    <string name="cardbase_delete_bad">Database deletion error</string>
+    <string name="aboutApp">"  <![CDATA[
+<p><strong>Developer:</strong> vaston</p>
+<p><strong>Telegram:</strong> vaston_RU</p>
+<p><strong>E-mail:</strong> <a href="mailto:vntonkoshkurov@yandex.ru">vntonkoshkurov@yandex.ru</a></p></p>
+<p>Send your wishes and suggestions by e-mail.</p>
+<p>Those who wish to donate a penny to maintain the author's Money wallet number:<br /><a href="https://yoomoney.ru/to/4100117885611099">4100117885611099</a></p>
+ ]]>"</string>
+    <string name="confidencial_description"><![CDATA[
+<p><strong>NO ONE READS THIS, BUT I WARNED YOU IF ANYTHING...</strong><br />
+1. The application stores bank card data in unencrypted form. Application data protection is provided by the built-in algorithms for data protection and encryption in the Android operating system.<br />
+2. The mode of installing a secure login to the application by PIN code does not use password encryption algorithms. The main task of this mode is to restrict access to bank card data when transferring a mobile device to trusted persons who do not have illegal intentions to hack the application and its database.<br />
+3. The application does not implement data transmission to third-party applications, data transmission over wireless networks and the Internet.<br />
+4. The application does not have the ability to create a backup copy, transfer to other devices, synchronize the bank card database between devices. If the application is deleted, it is not possible to restore previously entered data.<br />
+5. The developer of the application does not bear any responsibility for the leakage of bank card data.<br />
+6. The user, when storing bank card data in this application, must ensure reliable protection of his device using biometric identification systems, password identification and the use of antivirus applications at the level of the Android operating system. In addition, the user must provide reliable protection against theft of the device by intruders.<br/>
+7. In case of loss of the device and the risk of using bank card data by intruders, it is recommended to contact the bank servicing the card in order to block it.</p>
+]]></string>
+    <string name="dialog1_title_view">Card selected *</string>
+    <string name="dialog1_message_view">Select an action with the card</string>
+    <string name="dialog1_pos_button">View/Edit</string>
+    <string name="dialog1_neg_button">Delete</string>
+    <string name="dialog2_title_view">Data verification</string>
+    <string name="card_cvv">CV</string>
+    <string name="pin_length_check">The minimum length of the PIN code is 4 digits.</string>
+    <string name="color">Color</string>
+    <string name="color_select_dialog">Select Color</string>
+    <string name="color_select_sel_button">Select</string>
+    <string name="color_select_cst_button">Presets</string>
+    <string name="bank_name">Bank name</string>
+    <string name="menu_banklist">Banks</string>
+    <string name="bank_name_input">Enter bank name</string>
+    <string name="dialog3_title_view">"Bank selected: "</string>
+    <string name="dialog3_message_view">Select an action with the bank</string>
+    <string name="dialog1_neutr_button">Select cards</string>
+    <string name="bank_list">Your bank list</string>
+    <string name="bank_add">Bank add</string>
+    <string name="bank_cards">Bank cards</string>
+    <string name="bank_card_select">Select cards for bank</string>
+    <string name="card_short">Card</string>
+    <string name="bank_add_msg">Enter bank\'s name</string>
+    <string name="card_select_msg">Select bank cards</string>
+    <string name="card_selcted_msg">Cards added</string>
+    <string name="card_list">Your card list</string>
+    <string name="app_version">"Version: "</string>
+    <string name="select_card">Select</string>
+</resources>

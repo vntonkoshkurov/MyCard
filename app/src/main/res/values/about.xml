@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aboutApp">
+        <![CDATA[
+        <p><strong>Разработчик:</strong> vaston</p>
+        <p><br /><strong>Telegram:</strong> vaston_RU</p>
+        <p><br /><strong>E-mail:</strong> <a href="mailto:vntonkoshkurov@yandex.ru" target="_blank" rel="nofollow noopener">vntonkoshkurov@yandex.ru</a><br />
+        <br />Свои пожелания и предложения отправляйте по электронной почте.<br />
+        <br />Желающим пожертвовать копеечку на поддержание автора номер кошелька Юмани:<br /><a href="https://yoomoney.ru/to/4100117885611099">4100117885611099</a></p>
+        ]]>
+    </string>
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActyvity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="txt"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_FingerPoint"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:maxWidth="380dp"
+        android:maxLength="16"
+        android:textAlignment="center"
+        android:textColorHint="#78909C"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_3"
+        app:layout_constraintStart_toStartOf="@+id/btn_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_2"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="2"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <TextView
+        android:id="@+id/btn_5"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="5"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/btn_2"
+        app:layout_constraintStart_toStartOf="@+id/btn_2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_2" />
+
+    <TextView
+        android:id="@+id/btn_8"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="8"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/btn_5"
+        app:layout_constraintStart_toStartOf="@+id/btn_5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_5" />
+
+    <TextView
+        android:id="@+id/btn_6"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_5"
+        app:layout_constraintEnd_toEndOf="@+id/btn_3"
+        app:layout_constraintStart_toStartOf="@+id/btn_3"
+        app:layout_constraintTop_toTopOf="@+id/btn_5" />
+
+    <TextView
+        android:id="@+id/btn_7"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_8"
+        app:layout_constraintEnd_toEndOf="@+id/btn_4"
+        app:layout_constraintStart_toStartOf="@+id/btn_4"
+        app:layout_constraintTop_toTopOf="@+id/btn_8" />
+
+    <TextView
+        android:id="@+id/btn_9"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_8"
+        app:layout_constraintEnd_toEndOf="@+id/btn_6"
+        app:layout_constraintStart_toStartOf="@+id/btn_6"
+        app:layout_constraintTop_toTopOf="@+id/btn_8" />
+
+    <TextView
+        android:id="@+id/btn_0"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/btn_8"
+        app:layout_constraintStart_toStartOf="@+id/btn_8"
+        app:layout_constraintTop_toBottomOf="@+id/btn_8" />
+
+    <TextView
+        android:id="@+id/btn_4"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_5"
+        app:layout_constraintEnd_toEndOf="@+id/btn_1"
+        app:layout_constraintStart_toStartOf="@+id/btn_1"
+        app:layout_constraintTop_toTopOf="@+id/btn_5" />
+
+    <TextView
+        android:id="@+id/btn_1"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="55dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_2"
+        app:layout_constraintEnd_toStartOf="@+id/btn_2"
+        app:layout_constraintTop_toTopOf="@+id/btn_2" />
+
+    <TextView
+        android:id="@+id/btn_3"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:text="3"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_2"
+        app:layout_constraintStart_toEndOf="@+id/btn_2"
+        app:layout_constraintTop_toTopOf="@+id/btn_2" />
+
+    <ImageView
+        android:id="@+id/finger_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_0"
+        app:layout_constraintEnd_toEndOf="@+id/btn_7"
+        app:layout_constraintStart_toStartOf="@+id/btn_7"
+        app:layout_constraintTop_toTopOf="@+id/btn_0"
+        app:srcCompat="@drawable/fingerprint" />
+
+    <ImageView
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="@+id/btn_0"
+        app:layout_constraintEnd_toEndOf="@+id/btn_9"
+        app:layout_constraintStart_toStartOf="@+id/btn_9"
+        app:layout_constraintTop_toTopOf="@+id/btn_0"
+        app:srcCompat="@drawable/ic_baseline_login_24" />
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
+        app:srcCompat="@drawable/ic_baseline_backspace_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

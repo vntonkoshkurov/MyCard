@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyCard" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorAccent">@color/darkyellow</item>
+        <item name="colorPrimary">#C8C5C5</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name= "android:textColorPrimary">@color/white</item>
+        <item name = "android:textColor">#BABABA</item>>
+        <item name = "android:statusBarColor" tools:targetApi="l">@color/black</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="Theme.MyCard.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="Theme.MyCard.Icon">
+        <item name="tint">#C8C5C5</item>
+        <item name="buttonTint">#C8C5C5</item>
+    </style>
+
+    <style name="Theme.MyCard.SwitcherIcon">
+        <item name="android:fillColor">@color/white</item>>
+    </style>
+
+    <style name="Theme.MyCard.Buttons">
+        <item name="colorPrimary">@color/darkyellow</item>
+    </style>
+
+    <style name="Theme.MyCard.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
+    </style>
+
+    <style name="Theme.MyCard.Menu">
+        <item name="android:colorBackground">@color/purple_200</item>
+    </style>
+
+    <style name="Theme.SidePanelExample.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.SidePanelExample.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
